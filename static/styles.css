@@ -1,0 +1,16 @@
+h1 {
+   text-align: center;
+
+}
+#video{
+    border: 4px solid green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+body{
+    background-color: darkslategrey;
+
+
+}
