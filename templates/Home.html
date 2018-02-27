@@ -2,13 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='home.css') }}" />
 </head>
 <body>
-<h1>REALTIME INTELLIGENT SURVEILLANCE FOR CCTV CAMERAS</h1>
+<div class="head"><h1>REALTIME INTELLIGENT SURVEILLANCE FOR CCTV CAMERAS</h1></div>
+<div class="pic-wrapper">
 
-<a href={{  url_for('open_video')}}><button>Video</button></a>
+  <figure class="pic-1"></figure>
+  <figure class="pic-2"></figure>
+  <figure class="pic-3"></figure>
+  <figure class="pic-4"></figure>
+    <figure class="pic-5"></figure>
+  <figure class="pic-6"></figure>
+</div>
+	<div class="wrap" >
+        <a href="#" class="button" style="margin-left: -270px;margin-top: 100px;width:150px;height: 35px">
+        <form action = "{{  url_for('open_video')}}" method = "POST"
+         enctype = "multipart/form-data">
+         <input class='btn'  type = "file" name = "file" />
+         <input class='btn' value="Open video" type = "submit"/>
+      </form>
+  		</a>
+	</div>
+<div class="wrap" >
+        <a href={{  url_for('open_cam')}} class="button" style="margin-left: 170px;margin-top: 100px;width:150px;height: 35px">
+       Camera
+  		</a>
+	</div>
 
-<a href={{  url_for('open_cam')}}><button>Camera</button></a>
 </body>
 </html>
