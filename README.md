@@ -7,10 +7,17 @@ Technologies: Python,OpenCV,Dlib,Caffe neural framework and Flask
 
 
 Functionalities of the system can be stated as follows.
+
 • Detect humans in the video feed.
+
 • Track each detected individual separately while they are in the video feed(without losing trackers at occlusions).
+
 • Calibrating each tracker when its accuracy is less than a predefined threshold is done by each frame.
+
 • Count people in a region at a given instance.
+
 • Select and draw regions in the video feed and detect entrance to those regions.
+
 • Detect people are walking or staying at particular place.
+
 • Detect walking direction if they are walking.
